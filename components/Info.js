@@ -1,22 +1,20 @@
 import React from "react"
-import EmailIcon from  "./EmailIcon"
-import LinkedInIcon from "./LinkedInIcon"
 
 export default function Info(){
     return (
-        <section className='info-container'>
-            <img src='images/portrait.png' className='img'/>
-            <div className='info-main'>
-                <h1 className='name'>Laura Smith</h1>
-                <h2 className='job-title'>Frontend Developer</h2>
-                <h3 className='website'>laurasmith.website</h3>
-                <div className='btn-container'>
-                    <a href="mailto:help@scrimba.com" className="button email">
-                        <EmailIcon />
+        <section className='info__container'>
+            <img src='images/portrait.png' alt="Portrait of Laura Smith"/>
+            <div className='info__main'>
+                <h1 className='info__name'>Laura Smith</h1>
+                <h2 className='info__job-title'>Frontend Developer</h2>
+                <p className='info__website'>laurasmith.website</p>
+                <div className='info__btn-container'>
+                    <a href="mailto:help@scrimba.com" className="info__icon info__icon--email" aria-label="Send an email">
+                        <span class="fa-solid fa-envelope" alt="Email Icon"></span>
                         Email
                     </a>
-                    <a href="https://www.linkedin.com/" target="_blank" className="button linkedin">
-                        <LinkedInIcon />
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="info__icon info__icon--linkedin" aria-label="Visit LinkedIn profile">
+                        <span className="fa-brands fa-linkedin" alt="LinkedIn Icon"></span>
                         LinkedIn
                     </a>
                 </div>
