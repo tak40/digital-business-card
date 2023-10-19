@@ -7,7 +7,7 @@ export default function Info(){
             <div className='info__main'>
                 <h1 className='info__name'>Laura Smith</h1>
                 <h2 className='info__job-title'>Frontend Developer</h2>
-                <p className='info__website'>laurasmith.website</p>
+                <a href="http://laurasmith.website" target="_blank" rel="noopener noreferrer" className='info__website'>laurasmith.website</a>
                 <div className='info__btn-container'>
                     <a href="mailto:help@scrimba.com" className="info__icon info__icon--email" aria-label="Send an email">
                         <span class="fa-solid fa-envelope" alt="Email Icon"></span>

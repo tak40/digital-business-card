@@ -500,8 +500,8 @@ function Info() {
                 'Frontend Developer'
             ),
             _react2.default.createElement(
-                'p',
-                { className: 'info__website' },
+                'a',
+                { href: 'http://laurasmith.website', target: '_blank', rel: 'noopener noreferrer', className: 'info__website' },
                 'laurasmith.website'
             ),
             _react2.default.createElement(
