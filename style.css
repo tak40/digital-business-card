@@ -26,7 +26,7 @@
     --ease-in-out: ease-in-out;
 
     /* Footer */
-    --footer-icon-color: #918E9B;
+    --footer-icon-color: #f5f5f5;
     --footer-gradient-start: #9f7c63;
     --footer-gradient-end: var(--content-bg);
 }
