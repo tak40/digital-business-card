@@ -404,15 +404,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function About() {
     return _react2.default.createElement(
         'section',
-        { className: 'about__container' },
+        { className: 'section__container' },
         _react2.default.createElement(
             'h3',
-            { className: 'about__title' },
+            { className: 'section-title' },
             'About'
         ),
         _react2.default.createElement(
             'p',
-            { className: 'about__content' },
+            { className: 'about-content' },
             'I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.'
         )
     );
@@ -545,15 +545,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Interests() {
     return _react2.default.createElement(
         'section',
-        { className: 'interests__container' },
+        { className: 'section__container' },
         _react2.default.createElement(
             'h3',
-            { className: 'interests__title' },
+            { className: 'section-title' },
             'Interests'
         ),
         _react2.default.createElement(
             'p',
-            { className: 'interests__content' },
+            { className: 'interests-content' },
             'Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.'
         )
     );
