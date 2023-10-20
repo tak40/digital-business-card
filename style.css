@@ -167,31 +167,29 @@ p {
 /* ----- INTERESTS ----- */
 
 
-.about__container,
-.interests__container {
+.section__container {
     width: 80%;
     margin: 0 auto;
     line-height: 1.5;
 }
 
-.about__title,
-.interests__title {
+.section-title {
     font-size: 1rem; 
     font-weight: 700;
     color: #F5F5F5;
     padding-block: .25em;
 }
 
-.about__content {
+.about-content {
     margin: 0.5em 0 1.5em 0;
 }
 
-.interests__content {
+.interests-content {
     margin-bottom: 3.5em;
 }
 
-.about__content,
-.interests__content {
+.about-content,
+.interests-content {
     font-size: 0.725rem;
     font-weight: 400;
     letter-spacing: 0.2px;
