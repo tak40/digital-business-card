@@ -443,22 +443,22 @@ function Footer() {
         _react2.default.createElement(
             "a",
             { href: "https://www.twitter.com/", target: "_blank", rel: "noopener noreferrer", "aria-label": "Visit Twitter profile" },
-            _react2.default.createElement("span", { "class": "fa-brands fa-square-x-twitter fa-2x footer__icon", alt: "Twitter Icon" })
+            _react2.default.createElement("span", { className: "fa-brands fa-square-x-twitter fa-2x footer__icon", alt: "Twitter Icon" })
         ),
         _react2.default.createElement(
             "a",
             { href: "https://www.facebook.com/", target: "_blank", rel: "noopener noreferrer", "aria-label": "Visit Facebook profile" },
-            _react2.default.createElement("span", { "class": "fa-brands fa-square-facebook fa-2x footer__icon", alt: "Facebook Icon" })
+            _react2.default.createElement("span", { className: "fa-brands fa-square-facebook fa-2x footer__icon", alt: "Facebook Icon" })
         ),
         _react2.default.createElement(
             "a",
             { href: "https://www.instagram.com/", target: "_blank", rel: "noopener noreferrer", "aria-label": "Visit Instagram profile" },
-            _react2.default.createElement("span", { "class": "fa-brands fa-square-instagram fa-2x footer__icon", alt: "Instagram Icon" })
+            _react2.default.createElement("span", { className: "fa-brands fa-square-instagram fa-2x footer__icon", alt: "Instagram Icon" })
         ),
         _react2.default.createElement(
             "a",
             { href: "https://www.github.com/", target: "_blank", rel: "noopener noreferrer", "aria-label": "Visit GitHub repository" },
-            _react2.default.createElement("span", { "class": "fa-brands fa-square-github fa-2x footer__icon", alt: "GitHub Icon" })
+            _react2.default.createElement("span", { className: "fa-brands fa-square-github fa-2x footer__icon", alt: "GitHub Icon" })
         )
     );
 }
@@ -510,7 +510,7 @@ function Info() {
                 _react2.default.createElement(
                     'a',
                     { href: 'mailto:help@scrimba.com', className: 'info__icon info__icon--email', 'aria-label': 'Send an email' },
-                    _react2.default.createElement('span', { 'class': 'fa-solid fa-envelope', alt: 'Email Icon' }),
+                    _react2.default.createElement('span', { className: 'fa-solid fa-envelope', alt: 'Email Icon' }),
                     'Email'
                 ),
                 _react2.default.createElement(
