@@ -13,17 +13,22 @@
     --secondary-text: #DCDCDC;
     
     /* Accents */
-    --accent: #30d5c8;          /* primary accent color: turquoise */
-    --accent-hover: #53e5dc;   /* brightened version for hover */
-    --accent-active: #1bb2a6;  /* darkened version for active */
+    --accent: #30d5c8;          
+    --accent-hover: #53e5dc;   
+    --accent-active: #1bb2a6;  
 
-    --secondary-accent: #5e35b1;  /* secondary accent color: deep purple */
-    --secondary-accent-hover: #7347c9;   /* brightened version for hover */
-    --secondary-accent-active: #4b2899;  /* darkened version for active */
+    --secondary-accent: #5e35b1; 
+    --secondary-accent-hover: #7347c9;  
+    --secondary-accent-active: #4b2899;  
     
     /* Animation */
-    --transition-speed: 0.3s;  /* standard speed for transitions */
-    --ease-in-out: ease-in-out; /* standard easing for transitions */
+    --transition-speed: 0.3s;
+    --ease-in-out: ease-in-out;
+
+    /* Footer */
+    --footer-icon-color: #918E9B;
+    --footer-gradient-start: #9f7c63;
+    --footer-gradient-end: var(--content-bg);
 }
 
 
@@ -57,7 +62,9 @@ p {
     padding: 0;
 }
 
+
 /* ----- INFO ----- */
+
 
 .info__main {
     padding-block: 1.35em;
@@ -95,8 +102,8 @@ p {
 }
 
 .info__website:active {
-    color: var(--primary-text); /* Use primary text for better contrast. */
-    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2); /* Pressed effect. */
+    color: var(--primary-text); 
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .info__btn-container {
@@ -156,9 +163,9 @@ p {
 }
 
 
-
 /* ----- ABOUT ----- */
 /* ----- INTERESTS ----- */
+
 
 .about__container,
 .interests__container {
@@ -191,7 +198,9 @@ p {
     color: #DCDCDC;
 }
 
+
 /* ----- FOOTER ----- */
+
 
 @keyframes glowingEffect {
     0% {
@@ -202,18 +211,17 @@ p {
     }
 }
 
-
 footer {
     display: flex;
     justify-content: center;
     gap: 1.5em;
     padding-block: 1em;
     border-radius: 0 0 10px 10px;
-    background: linear-gradient(to top, #9f7c63, var(--content-bg)); /* golden gradient to content's background */
+    background: linear-gradient(to top, var(--footer-gradient-start), var(--footer-gradient-end));
 }
 
 .footer__icon {
-    color: #918E9B;
+    color: var(--footer-icon-color);
     transition: transform var(--transition-speed) var(--ease-in-out), 
                 box-shadow var(--transition-speed) var(--ease-in-out);
     display: inline-block;
