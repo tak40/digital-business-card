@@ -27,18 +27,17 @@
     --secondary-text: #DCDCDC;
     --tertiary-text: #F3BF99;
     
-    /* Accents */
-    --accent: #f5c9aa;
-    --accent-hover: #f8d4bb;
-    --accent-active: #f2be99; 
+    /* Buttons */
+    --clr-email: #f5c9aa;
+    --clr-email-hover: #f8d4bb;
+    --clr-email-active: #f2be99; 
 
-    --secondary-accent: #0E76A8;
-    --secondary-accent-hover: #1787b8; 
-    --secondary-accent-active: #065a88; 
+    --clr-linkedin: #0E76A8;
+    --clr-linkedin-hover: #1787b8; 
+    --clr-linkedin-active: #065a88; 
     
     /* Animation */
-    --transition-speed: 0.3s;
-    --ease-in-out: ease-in-out;
+    --transition-settings: all 0.3s ease-in-out;
 
     /* Footer */
     --footer-icon-color: #f5f5f5;
@@ -59,15 +58,15 @@ body {
     place-content: center;
 }
 
-.content-container {    
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-size: 16px;
+.content-container { 
     width: 20em;
     margin: 0 auto;
-    background-color: var(--content-bg);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.1);   
     border-radius: 12px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 16px;
     color: var(--primary-text);
-    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.1)
+    background-color: var(--content-bg);
 }
 
 h1,
@@ -82,8 +81,8 @@ p {
 /* ----- INFO ----- */
 
 .info__container img {
-    width: 100%;
     display: block;
+    width: 100%;
 }
 
 .info__main {
@@ -99,23 +98,23 @@ p {
 .info__job-title {
     padding-block: 0.5em;
     font-size: 0.75rem;
-    color: #F3BF99;
+    color: var(--tertiary-text);
 }
 
 .info__website {
     padding: 0.35em 0;
     margin: 0.25em 0;
+    border-bottom: 2px solid transparent;
     font-size: 0.7rem;
     font-weight: 400;
     color: var(--secondary-text);
     text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: all var(--transition-speed) var(--ease-in-out);
+    transition: var(--transition-settings);
 }
 
 .info__website:hover {
-    border-bottom-color: var(--secondary-text); 
     padding-bottom: 0.33em;
+    border-bottom-color: var(--secondary-text); 
 }
 
 .info__website:active {
@@ -142,36 +141,36 @@ p {
     border: none;
     font-size: 0.875rem;
     text-decoration: none;
-    transition: all var(--transition-speed) var(--ease-in-out);
+    transition: var(--transition-settings);
 }
 
 .info__icon--email {
-    background: var(--accent);
     color: var(--content-bg);
+    background: var(--clr-email);
 }
 
 .info__icon--email:hover {
-    background: var(--accent-hover);
+    background: var(--clr-email-hover);
     transform: scale(1.05);
 }
 
 .info__icon--email:active {
-    background: var(--accent-active);
+    background: var(--clr-email-active);
     transform: scale(0.95);
 }
 
 .info__icon--linkedin {
-    background: var(--secondary-accent);
+    background: var(--clr-linkedin);
     color: var(--primary-text);
 }
 
 .info__icon--linkedin:hover {
-    background: var(--secondary-accent-hover);
+    background: var(--clr-linkedin-hover);
     transform: scale(1.05);
 }
 
 .info__icon--linkedin:active {
-    background: var(--secondary-accent-active);
+    background: var(--clr-linkedin-active);
     transform: scale(0.95);
 }
 
@@ -187,10 +186,10 @@ p {
 }
 
 .section-title {
+    padding-block: .25em;
     font-size: 1rem; 
     font-weight: 700;
     color: var(--primary-text);
-    padding-block: .25em;
 }
 
 .about-content {
@@ -235,16 +234,13 @@ footer {
 }
 
 .footer__icon {
-    color: var(--footer-icon-color);
-    transition: transform var(--transition-speed) var(--ease-in-out), 
-                box-shadow var(--transition-speed) var(--ease-in-out);
     display: inline-block;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    color: var(--footer-icon-color);
+    transition: var(--transition-settings);
 }
 
 .footer__icon:hover {
     transform: scale(1.05);
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
     animation: glowingEffect 2s infinite alternate;
 } 
 
