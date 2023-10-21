@@ -1,3 +1,17 @@
+/**
+ * ------------------------------------------
+ * Stylesheet for [Digital Business Card]
+ * 
+ * Author: Tak
+ * Date Created: [2023-7-19]
+ * Last Updated: [2023-10-20]
+ * 
+ * Notes:
+ * - Initial design based on the business card theme.
+ * - Focused on React setup, accessibility and CSS animations.
+ * ------------------------------------------
+ */
+
 * {
     box-sizing: border-box;
     /* outline: dotted tomato; */
@@ -30,7 +44,6 @@
     --footer-icon-color: #f5f5f5;
     --footer-gradient-start: #9f7c63;
     --footer-gradient-end: var(--content-bg);
-
 }
 
 
@@ -49,7 +62,7 @@ body {
 .content-container {    
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 16px;
-    width: 19.8125em;
+    width: 20em;
     margin: 0 auto;
     background-color: var(--content-bg);
     border-radius: 12px;
@@ -68,6 +81,10 @@ p {
 
 /* ----- INFO ----- */
 
+.info__container img {
+    width: 100%;
+    display: block;
+}
 
 .info__main {
     padding-block: 1.35em;
@@ -75,14 +92,13 @@ p {
 }
 
 .info__name {
-    font-size: 1.5625rem;
+    font-size: 1.55rem;
     font-weight: 700;
 }
 
 .info__job-title {
     padding-block: 0.5em;
     font-size: 0.75rem;
-    font-weight: 400;
     color: #F3BF99;
 }
 
@@ -94,8 +110,7 @@ p {
     color: var(--secondary-text);
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    transition: background-color var(--transition-speed) var(--ease-in-out),
-                border-color var(--transition-speed) var(--ease-in-out);
+    transition: all var(--transition-speed) var(--ease-in-out);
 }
 
 .info__website:hover {
@@ -120,18 +135,14 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 8.28em;
+    width: 8em;
     padding: 9px 13px 9px 11px;
     gap: 8px;
     border-radius: 6px;
     border: none;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
     font-size: 0.875rem;
-    font-weight: 500;
     text-decoration: none;
-    transition: transform var(--transition-speed) var(--ease-in-out), 
-                background-color var(--transition-speed) var(--ease-in-out),
-                color var(--transition-speed) var(--ease-in-out);
+    transition: all var(--transition-speed) var(--ease-in-out);
 }
 
 .info__icon--email {
@@ -228,7 +239,7 @@ footer {
     transition: transform var(--transition-speed) var(--ease-in-out), 
                 box-shadow var(--transition-speed) var(--ease-in-out);
     display: inline-block;
-    /* box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .footer__icon:hover {
